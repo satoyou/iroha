@@ -1,0 +1,457 @@
+/*---------------------------------
+
+  section4
+
+  1. secton2
+    1.1 section4__vertical-title
+    1.2 section4__titile__unit
+    1.3 section4__content
+        1.3.1 section__message
+        1.3.2 section__image
+
+---------------------------------*/
+
+/*  
+  1. section4
+---------------------------------*/
+.section4 {
+    position: relative;
+    padding: 7.29vw 0 7.76vw;
+    background-color: #f8f8f8;
+}
+
+/*  
+  1.1 section4__vertical-title
+---------------------------------*/
+.section4__vertical-title {
+    opacity: 0.1;
+    position: absolute;
+    top: 22.16vw;
+    left: -5.48vw;
+    transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg);
+    color: rgba(0, 0, 0, 0.8);
+    font-weight: normal;
+    font-size: 5.2vw;
+    line-height: 1.56vw;
+    letter-spacing: 0.1em;
+    text-align: center;
+    text-shadow: 3px 3px 2px rgba(0, 0, 0, 0.3);
+}
+/*  
+  1.2 section4__titile__unit
+---------------------------------*/
+.section4__title__unit {
+    margin-left: 6.14vw;
+}
+
+.section4__title {
+    color: rgba(0, 0, 0, 0.8);
+    font-weight: normal;
+    font-size: 3.12vw;
+    font-family: "Toppan Bunkyu Midashi Mincho";
+    letter-spacing: 0.1em;
+    text-shadow: 3px 3px 2px rgba(0, 0, 0, 0.3);
+}
+
+.section4__title-line {
+    display: inline-block;
+    width: 15.15vw;
+    height: 2px;
+    margin: 1.73vw 0 1.79vw 12.52vw;
+    background-color: black;
+}
+
+/*  
+  1.3 section4__content
+---------------------------------*/
+.section4__content {
+    position: relative;
+    width: 80vw;
+    height: 51.14vw;
+    margin-left: 16.09vw;
+}
+
+/*  
+  1.3.1 section4__message
+---------------------------------*/
+.section4__message {
+    position: absolute;
+    top: 7.29vw;
+    opacity: 0.9;
+    width: 39.63vw;
+    height: 24.21vw;
+    background-color: #fff;
+}
+
+.section4__message__inner {
+    margin: 0 4.66vw 0 3.95vw;
+    padding-top: 4.01vw;
+    text-align: right;
+}
+
+.section4__content__text--ja {
+    color: rgba(0, 0, 0, 0.8);
+    font-size: 0.93vw;
+    line-height: 1.56vw;
+    letter-spacing: 0.1em;
+    text-align: left;
+    text-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+}
+
+.section4__content__text--en {
+    margin-top: 3.46vw;
+    color: rgba(0, 0, 0, 0.8);
+    font-size: 0.78vw;
+    letter-spacing: 0.1em;
+    text-align: left;
+    text-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+}
+
+.section4__btn {
+    display: inline-block;
+    transition: .4s;
+    margin-top: 5.39vw;
+    padding: 1.02vw 1.61vw 0.75vw;
+    border: 1px solid #333;
+    color: rgba(0, 0, 0, 0.9);
+    font-size: 0.78vw;
+    letter-spacing: 0.1em;
+    text-align: center;
+    text-shadow: 0px 4px 7px rgba(0, 0, 0, 0.16);
+    &:hover {
+        background: rgba(0, 0, 0, 0.9);
+        color: #fff;
+    }
+}
+
+/*  
+  1.3.2 section4__image
+---------------------------------*/
+.section4__image--l {
+    width: 46.77vw;
+    height: 30.36vw;
+    margin: 0 0 0 auto;
+}
+
+.section4__photo--l {
+    width: 100%;
+    height: 100%;
+}
+
+.section4__image--grid {
+    width: 80vw;
+    height: 15.52vw;
+    margin-top: 5.26vw;
+}
+
+.section4__photo--grid {
+    width: 100%;
+    height: 100%;
+}
+
+
+/*---------------------------------
+
+  section1 768px 幅
+
+---------------------------------*/
+@include mq('tab') {
+    /*  
+      1. section4
+    ---------------------------------*/
+    .section4 {
+        padding: 8.17vw 0 8.17vw;
+    }
+
+    /*  
+      1.1 vertical-title
+    ---------------------------------*/
+    .section4__vertical-title {
+        top: 24.16vw;
+        font-weight: normal;
+        font-size: 5.07vw;
+        font-family: "Toppan BunkyuMidashiMinStdN";
+    }
+
+    /*  
+      1.2 section4__title__unit
+    ---------------------------------*/
+    .section4__title__unit {
+        margin-left: 6.96vw;
+    }
+
+    .section4__title {
+        font-size: 2.99vw;
+    }
+
+    .section4__title-line {
+        width: 24.77vw;
+        height: 3px;
+        margin: 2.16vw 0 1.79vw 12.22vw;
+    }
+
+    /*  
+      1.3 section4__content
+    ---------------------------------*/
+    .section4__content {
+        width: 80.1vw;
+    }
+
+    /*  
+    1.3.1 section4__message
+    ---------------------------------*/
+    .section4__message {
+        opacity: 0.9;
+        position: absolute;
+        top: 7.29vw;
+        width: 39.63vw;
+        height: 24.21vw;
+        background-color: #fff;
+    }
+
+    .section4__message__inner {
+        padding-top: 4.01vw;
+        margin: 0 0 0 3.95vw;
+        text-align: right;
+    }
+
+    .section4__content__text--ja {
+        transform: scale(0.6);
+        transform-origin: left top;
+        width: 29.7rem;
+        font-size: 1rem;
+        line-height: 1.56vw;
+        letter-spacing: 0.1em;
+    }
+
+    .section4__content__text--en {
+        transform: scale(0.6);
+        transform-origin: left top;
+        margin-top: 4.41vw;
+        font-size: 1rem;
+        letter-spacing: 0.1em;
+    }
+
+    .section4__btn {
+        transform: scale(0.5);
+        transform-origin: top;
+        font-size: 1rem;
+        margin-top: 2.69vw;
+        padding: 2.08vw 4.32vw 1.71vw 4.68vw;
+    }
+}
+
+/*---------------------------------
+
+  section1 414px 幅
+
+---------------------------------*/
+@include mq('sp') {
+    /*  
+        1. section4
+    ---------------------------------*/
+    .section4 {
+        position: relative;
+        background-color: #fff;
+        padding: 9.95vw 0 0 0;
+    }
+
+    /*  
+        1.1 vertical-title
+    ---------------------------------*/
+    .section4__vertical-title {
+        top: 27.66vw;
+        left: -7.48vw;    
+        font-weight: normal;
+        font-size: 6.76vw;
+        line-height: 2.89vw;
+        font-family: "Toppan BunkyuMidashiMinStdN";
+        letter-spacing: 0.1em;
+    }
+
+    /*  
+      1.2 section4__title__unit
+    ---------------------------------*/
+    .section4__title__unit {
+        margin: 0;
+    }
+
+    .section4__title {
+        font-size: 4.34vw;
+        text-align: center;
+    }
+
+    .section4__title-line {
+        display: none;
+    }
+
+    /*  
+        1.3 section4__content
+    ---------------------------------*/
+    .section4__content {
+        position: static;
+        width: 100%;
+        height: auto;
+        margin-left: 0;
+    }
+
+    /*  
+        1.3.1 section4__message
+    ---------------------------------*/
+    .section4__message {
+        position: static;
+        width: 73.56vw;
+        height: 44.95vw;
+        margin-left: 22.46vw;
+    }
+
+    .section4__message__inner {
+        padding-top: 6.69vw;
+        margin: 0 0 0 7.34vw;
+    }
+
+    .section4__content__text--ja {
+        transform: scale(0.9);
+        font-size: 1rem;
+        line-height: 1em;
+    }
+
+    .section4__content__text--en {
+        transform: scale(0.9);
+        margin-top: 7.46vw;
+        font-size: 1rem;
+        line-height: 1em;
+    }
+
+    .section4__btn {
+        transform: scale(.7);
+        margin: 9.22vw 0 0 0;
+        padding: 3.44vw 6.9vw 3.1vw;
+        font-size: 1rem;
+        letter-spacing: 0.1em;
+    }
+
+    /*  
+        1.3.2 section4__image
+    ---------------------------------*/
+    .section4__image--l {
+        width: 86.8vw;
+        height: 56.35vw;
+        margin: 0 auto;
+    }
+
+    .section4__image--grid {
+        width: 100%;
+        height: auto;
+        margin-top: 4.68vw;
+    }
+}
+
+/*---------------------------------
+
+  header iphoneX 幅
+
+---------------------------------*/
+@include mq('iphonex') {
+    /*  
+        1. section4
+    ---------------------------------*/
+    .section4 {
+        padding: 18.4vw 0 9.28vw;
+        background-color: #f8f8f8;
+    }
+
+    /*  
+        1.1 vertical-title
+    ---------------------------------*/
+    .section4__vertical-title {
+        top: 94vw;
+        left: -33vw;
+        font-size: 16vw;
+        font-family: "Toppan Bunkyu Midashi Mincho";
+    }
+
+    /*  
+        1.2 section4__titile__unit
+    ---------------------------------*/
+    .section4__title__unit {
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        background-color: #f8f8f8;
+    }
+
+    .section4__title {
+        width: 81.6vw;
+        margin: 0 auto;
+        font-size: 6.66vw;
+    }
+
+    .section4__title-line {
+        display: inline-block;
+        width: 52.66vw;
+        height: 1px;
+        margin: 6vw 0 0 20.4vw;
+    }
+
+    /*  
+        1.3.1 section4__message
+    ---------------------------------*/
+    .section4__message {
+        width: 71.73vw;
+        height: 106.66vw;
+        margin: 14.26vw 0 0 auto;
+        background-color: #fff;
+    }
+
+    .section4__message__inner {
+        margin: 0 5.33vw 0 5.86vw;
+        padding-top: 6.42vw;
+    }
+
+    .section4__content__text--ja {
+        transform: scale(1);
+        width: 60.8vw;
+        height: 60.55vw;
+        font-size: 4vw;
+        line-height: 6.66vw;
+    }
+
+    .br__pc {
+        display: none;
+    }
+
+    .section4__content__text--en {
+        transform: scale(1);
+        margin-top: 6.82vw;
+        font-size: 4vw;
+        line-height: 5.6vw;
+    }
+
+    .section4__btn {
+        transform: scale(1);
+        margin-top: 6.66vw;
+        padding: 3.01vw 6.45vw;
+        font-size: 3.2vw;
+    }
+
+    /*  
+        1.3.2 section4__image
+    ---------------------------------*/
+    .section4__image {
+        margin-top: 12.8vw;
+    }
+
+    .section4__image--l {
+        width: 100%;
+        height: auto;
+    }
+
+    .section4__image--grid {
+        width: 100%;
+        height: auto;
+        margin-top: 10.4vw;
+    }
+} 

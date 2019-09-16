@@ -1,0 +1,369 @@
+/*---------------------------------
+
+  section1
+
+  1. secton1
+    1. 1section1__inner
+        1.1.1 section1__content
+        1.1.2 section1__image
+    2. section1__box--gray
+
+---------------------------------*/
+
+/*  
+  1. section1
+---------------------------------*/
+.section1 {
+    position: relative;
+}
+
+/*  
+  1.1 section1__inner
+---------------------------------*/
+.section1__inner {
+    display: flex;
+    margin-bottom: 7.14vw;
+    margin-left: 8.07vw;
+    padding-top: 8.54vw;
+    justify-content: space-between;
+}
+
+/*  
+  1.1.1 section1__content
+---------------------------------*/
+.section1__content {
+    width: 100%;
+    max-width: 47vw;
+}
+
+.section1__content__title {
+    color: rgba(0, 0, 0, 0.8);
+    font-weight: normal;
+    font-size: 2.6vw;
+    line-height: 3rem;
+    letter-spacing: 0.1em;
+    text-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+}
+
+.section1__content__text--ja {
+    margin-top: 3.54vw;
+    color: rgba(0, 0, 0, 0.8);
+    font-weight: normal;
+    font-size: 1.82vw;
+    line-height: 2.6vw;
+    letter-spacing: 0.1em;
+    text-align: left;
+    text-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+}
+
+.ihponex__br {
+    display: none;
+}
+
+.section1__content__text--en {
+    margin-top: 3.48vw;
+    color: rgba(0, 0, 0, 0.8);
+    font-weight: normal;
+    font-size: 1.82vw;
+    line-height: 2.6vw;
+    letter-spacing: 0.1em;
+    text-align: left;
+    text-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+}
+
+.sm__block {
+    display: none;
+}
+
+.section1__content__btn {
+    display: inline-block;
+    margin: 6.56vw 0 0 10.67vw;
+    padding: 2.3rem 3.7rem;
+    border: 1px solid #000;
+    color: rgba(0, 0, 0, 0.9);
+    font-size: 1.04vw;
+    letter-spacing: 0.1em;
+    text-align: center;
+    text-shadow: 0px 4px 7px rgba(0, 0, 0, 0.16);
+    transition: .4s;
+    &:hover {
+        background: rgba(0, 0, 0, 0.9);
+        color: #fff;
+    }
+}
+
+/*  
+  1.1.2 section1__image
+---------------------------------*/
+.section1__image {
+    margin-right: 7.08vw;
+}
+
+.section1__image--l, .section1__image--s {
+    width: 36.35vw;
+    height: auto;
+}
+
+.section1__image--s {
+    margin-top: 4.16vw;
+}
+
+.section1__image--l img, .section1__image--s img {
+    width: 100%;
+    height: 100%;
+}
+
+/*  
+  1.2 section1__box--gray
+---------------------------------*/
+.section1__box--gray {
+    position: absolute;
+    top: 5.18vw;
+    left: 23.07vw;
+    z-index: -1;
+    width: 59.84vw;
+    height: 36.45vw;
+    background-color: #f8f8f8;
+}
+
+/*---------------------------------
+
+  section1 768px 幅
+
+---------------------------------*/
+@include mq('tab') {
+    /*  
+        1.1 section1__inner
+    ---------------------------------*/
+    .section1__inner {
+        height: 46.99vw;
+        margin: 8.52vw 0 10.14vw 8.07vw;
+    }
+
+    /*  
+        1.1.1 section1__content
+    ---------------------------------*/
+    .section1__content {
+        width: 100%;
+        max-width: 42.7rem;
+    }
+
+    .section1__content__title {
+        font-size: 2.47vw;
+        line-height: 1.43vw;
+        letter-spacing: 0.1em;
+    }
+
+    .section1__content__text--ja {
+        margin-top: 3.64vw;
+        font-size: 1.69vw;
+        line-height: 2.47vw;
+        letter-spacing: 0.1em;
+    }
+    .section1__content__text--en {
+        margin-top: 4.3vw;
+        font-size: 1.69vw;
+        line-height: 2.47vw;
+        letter-spacing: 0.1em;
+    }
+    .section1__content__btn {
+        padding: 1.57rem 2.57rem 1.28rem;
+        transform: scale(0.7);
+        font-size: 1rem;
+    }
+    /*  
+        1.1.2 section1__image
+    ---------------------------------*/
+    .section1__image {
+        width: 43.12vw;
+        height: auto;
+        position: relative;
+    }
+    .section1__image--l {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        width: 43.12vw;
+    }
+    .section1__image--s {
+        position: absolute;
+        right: 27.99vw;
+        bottom: -2.91vw;
+        width: 21.5vw;
+    }
+}
+
+/*---------------------------------
+
+  section1 414px 幅
+
+---------------------------------*/
+@include mq('sp') {
+    /*  
+        1.1 section1__inner
+    ---------------------------------*/
+    .section1__inner {
+        display: block;
+        height: auto;
+        margin: 9.13vw 11.83vw 1.98rem 8.07vw;
+    } 
+    /*  
+        1.1.1 section1__content
+    ---------------------------------*/
+    .section1__content {
+        width: 100%;
+        max-width: 42.7rem;
+    }
+    .section1__content__title {
+        font-size: 3.38vw;
+        letter-spacing: 0.1em;
+    }
+    .section1__content__text--ja {
+        margin-top: 2.66rem;
+        transform: scale(0.9);
+        transform-origin: left top;
+        font-size: 1rem;
+        line-height: 3.14vw;
+        letter-spacing: 0.1em;
+    }
+    .section1__content__text--en {
+        display: inline-block;
+        transform: scale(0.9);
+        transform-origin: left top;
+        margin-top: 3.82rem;
+        font-size: 1rem;
+        line-height: 3.14vw;
+        letter-spacing: 0.1em;
+        vertical-align: bottom;
+    }
+    .section1__content__btn {
+        margin-left: 5.2rem;
+        padding: 2.65vw 4.83vw 2.17vw;
+        font-size: 1.69vw;
+    }
+    /*  
+        1.1.2 section1__image
+    ---------------------------------*/
+    .section1__image {
+        width: 264px;
+        height: 150px;
+        margin: 41.6px auto 19.8px;
+    }
+
+    .section1__image--l {
+        width: 200px;
+        height: 137px;
+        margin: 0 0 0 auto;
+        top: 0;
+    }
+
+    .section1__image--s {
+        width: 100px;
+        height: 67.4px;
+        margin-top: 0;
+        top: 83.2px;
+        left: 0;
+    }
+
+    .section1__image--l img, .section1__image--s img {
+        width: 100%;
+        height: 100%;
+    }
+    /*  
+        1.2 section1__box--gray
+    ---------------------------------*/
+    .section1__box--gray {
+        display: none;
+    }
+} 
+
+/*---------------------------------
+
+  header iphoneX 幅
+
+---------------------------------*/
+@include mq('iphonex') {
+    /*  
+        1.1 section1__inner
+    ---------------------------------*/
+    .section1__inner {
+        margin: 25.65vw 0 0;
+    } 
+
+     /*  
+        1.1.1 section1__content
+    ---------------------------------*/
+    .section1__content {
+        width: 100%;
+        max-width: 100vw;
+        padding-left: 12.45vw;
+        text-align: right;
+    }
+
+    .section1__content__title {
+        font-size: 5.86vw;
+        text-align: left;
+    }
+
+    .section1__content__text--ja {
+        transform: scale(1);
+        width: 295px;
+        margin-top: 23.94vw;
+        font-size: 4vw;
+        line-height: 6.66vw;
+        letter-spacing: 0.1em;
+    }
+
+    .sm__block {
+        display: inline-block;
+    }
+
+    .section1__content__text--en {
+        display: block;
+        transform: scale(1);
+        margin-top: 3.82rem;
+        font-size: 4vw;
+        line-height: 5.6vw;
+    }
+    .section1__content__btn {
+        padding: 3.01vw 6.45vw;
+        font-size: 3.2vw;
+    }
+
+    /*  
+        1.1.2 section1__image
+    ---------------------------------*/
+    .section1__image {
+        display: flex;
+        position: static;
+        width: 100%;
+        height: 86vw;
+        margin: 4.72vw 0 8.93vw;
+        flex-direction: column-reverse;
+    }
+
+    .section1__image--l {
+        position: static;
+        width: 72.26vw;
+        height: 47.59vw;
+        margin: 0 0 0 auto;
+    }
+
+    .section1__image--s {
+        position: static;
+        width: 57.19vw;
+        height: 38.41vw;
+    }
+
+    /*  
+        1.2 section1__box--gray
+    ---------------------------------*/
+    .section1__box--gray {
+        display: inline-block;
+        position: absolute;
+        top: -9.62vw;
+        left: 44.8vw;
+        width: 55.5vw;
+        height: 201.22vw;
+    } 
+}

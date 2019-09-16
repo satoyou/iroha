@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="課題②">
+    <title>課題②</title>
+
+    <!-- reset.css -->
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+    
+    <!-- swaiper.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css">
+    
+    <!-- drawer.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/drawer/3.2.2/css/drawer.min.css">
+    
+    <!-- jquery & iScroll -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/iScroll/5.2.0/iscroll.min.js"></script>
+    
+    <!-- drawer.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/drawer/3.2.2/js/drawer.min.js"></script>
+
+    <!-- animate.css -->
+    <link rel="stylesheet" href="./css/animate.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body class="drawer drawer--right">
+    <!-- header -->
+    <header class="header" id="home">
+
+        <!-- banner -->        
+        <div role="banner">
+            <button type="button" class="drawer-toggle drawer-hamburger" onclick="changeDisplay();">
+                <span class="sr-only">toggle navigation</span>
+                <span class="drawer-hamburger-icon"></span>
+            </button>
+            <nav class="drawer-nav" role="navigation">
+                <ul class="drawer-menu">
+                    <li><a class="drawer-brand" href="#" style="background-image: url(./images/menu_logo@2x.png)"></a></li>
+                    <li><a class="drawer-menu-item" href="#about">About iroha<br><span>-いろはのこと-</span></a></li>
+                    <li><a class="drawer-menu-item" href="#lodge">Lodge<br><span>-宿泊ロッジ-</span></a></li>
+                    <li><a class="drawer-menu-item" href="#food">Food Atelier<br>& Lounge<br><span>-食工房/ラウンジ-</span></a></li>
+                    <li><a class="drawer-menu-item" href="#program">Interactive<br>Program<br><span>-体験プログラム-</span></a></li>
+                    <li><a class="drawer-menu-item" href="#booking">Booking<br><span>-ご予約-</span></a></li>
+                    <li><a class="drawer-menu-item drawer-menu-item--facebook" href="#"><img src="./images/logo_facebook.png" alt=""></a></li>
+                    <li><a class="drawer-menu-item drawer-menu-item--insta" href="#"><img src="./images/logo_insta.png" alt=""></a></li>
+                </ul>
+            </nav>
+        </div><!-- banner -->        
+
+        <!-- header__menu -->
+        <div class="header__menu" id="target">
+
+            <!-- header__logo -->
+            <div class="header__logo">
+                <a href="#home">
+                    <h1 class="header__title">いろは</h1>
+                    <p class="header__lead">-Yakushima Lodge& Food Atelier-</p>
+                    <img src="./images/menu_logo@2x.png" alt="">
+                </a>
+            </div><!-- /header__logo -->
+
+            <!-- header__nav -->
+            <nav class="header__nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#about">About iroha<br><span>-いろはのこと-</span></a></li>
+                    <li class="nav__item"><a href="#lodge">Lodge<br><span>-宿泊ロッジ-</span></a></li>
+                    <li class="nav__item"><a href="#food">Food Atelier<br>& Lounge<br><span>-食工房/ラウンジ-</span></a></li>
+                    <li class="nav__item"><a href="#program">Interactive<br>Program<br><span>-体験プログラム-</span></a></li>
+                    <li class="nav__item"><a href="#booking">Booking<br><span>-ご予約-</span></a></li>
+                </ul>
+            </nav><!-- /header__nav -->
+
+        </div><!-- /header__menu -->
+
+        <!-- maine__logo -->
+        <div class="maine__logo">
+            <img src="./images/logo-white@2x.png" alt="">
+        </div><!-- /maine__logo -->
+
+        <!-- swiper-container -->
+        <div class="swiper-container">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide" style="background-image: url(./images/main_bg_01@2x.png)"></div>
+                <div class="swiper-slide" style="background-image: url(./images/main_bg_02@2x.png)"></div>
+                <div class="swiper-slide" style="background-image: url(./images/main_bg_03@2x.png)"></div>
+                <div class="swiper-slide" style="background-image: url(./images/main_bg_04@2x.png)"></div>
+                <div class="swiper-slide" style="background-image: url(./images/main_bg_05@2x.png)"></div>
+                <div class="swiper-slide" style="background-image: url(./images/main_bg_06@2x.png)"></div>
+            </div>
+        </div><!-- /swiper-container -->
+        <!-- swiper-container -->
+        <div class="swiper-container swiper-container--iphonex">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide" style="background-image: url(./images/main_bg_ipx_01.png)"></div>
+                <div class="swiper-slide" style="background-image: url(./images/main_bg_ipx_02.png)"></div>
+                <div class="swiper-slide" style="background-image: url(./images/main_bg_ipx_03.png)"></div>
+                <div class="swiper-slide" style="background-image: url(./images/main_bg_ipx_04.png)"></div>
+            </div>
+        </div><!-- /swiper-container -->
+
+    </header>
+    <!-- /header -->    
+    
+            
+    <!-- section1 -->
+    <section class="section1 wow fadeInUp" data-wow-duration="2s" data-wow-delay=".5s" data-wow-offset="10" id="about">
+
+        <div class="section1__inner">
+
+            <!-- section1__content -->
+            <div class="section1__content">
+                <h3 class="section1__content__title">「stay iroha as live」</h3>
+                <p class="section1__content__text--ja">テキストテキストテキスト<br>屋久島の地で、、、いろはで、感じて<br class="ihponex__br">欲しいこと。<br class="md__br"><br>作っていきたい空間。<br>丸さんたちの想い。<span class="md__block"><br>暮らしの体験宿、いろは</span></p>
+                <p class="section1__content__text--en">English version About iroha.<span class="sm__block">Yakushima nature.<br>Onoaida.iroha maru</span></p>
+                <a class="section1__content__btn" href="">Read more</a>
+            </div><!-- /section1__content -->
+            
+            <!-- section1__image-->
+            <div class="section1__image">
+                <div class="section1__image--l">
+                    <img src="./images/sec1_photo_1.png" alt="">
+                </div>
+                <div class="section1__image--s">
+                    <img src="./images/sec1_photo_2.png" alt="">
+                </div>
+            </div><!-- /section1__image-->
+
+        </div><!-- /section1__inner-->
+        
+        <div class="section1__box--gray"></div>
+
+    </section>
+    <!-- /section1 -->
+
+    <!-- section2 -->
+    <section class="section2 wow fadeInUp" data-wow-duration="2s" data-wow-delay=".5s" data-wow-offset="10" id="lodge">
+        <h2 class="section2__vertical-title">Lodge</h2>
+        <div class="section2__title__unit">
+            <h3 class="section2__title">Lodge  - 宿泊ロッジ -</h3>
+            <span class="section2__title-line"></span>
+        </div>
+        
+        <!-- section2__content -->
+        <div class="section2__content">
+
+            <!-- section2__message -->
+            <div class="section2__message">
+                <div class="section2__message__inner">
+                    <p class="section2__content__text--ja">豊かな暮らしの体験宿 自然の中の貸切ロッジ。<br>海の音､鳥の声､樹々に囲まれて自然のなかでゆったりと､<br class="br__pc">屋久島の暮らしを体験できる宿です｡<br>定員は5名で、ベットは3台､布団を2枚敷くことができます｡</p>
+                    <p class="section2__content__text--en">English version About Lodge, stay plan.</p>
+                    <a class="section2__btn" href="">Read more</a>
+                </div>
+            </div><!-- /section2__inner -->
+            
+            <!-- section2__image-->
+            <div class="section2__image">
+                <div class="section2__image--l">
+                    <img class="section2__photo--l" src="./images/sec2_photo_1.png" alt="">
+                </div>
+                <div class="section2__image--grid">
+                    <img class="section2__photo--grid" src="./images/sec2_photo_2.png" alt="">
+                </div>
+            </div><!-- /section2__image -->
+        </div><!-- /section2__content -->
+            
+    </section>
+    <!-- /section2 -->
+
+    <!-- section3 -->
+    <section class="section3 wow fadeInUp" data-wow-duration="2s" data-wow-delay=".5s" data-wow-offset="10" id="food">
+            <h2 class="section3__vertical-title">Food Atelier& Lounge</h2>
+            <div class="section3__title__unit">
+                <h3 class="section3__title">Food Atelier& Lounge</h3>
+                <span class="section3__title-line"></span>
+            </div>
+            
+            <!-- section3__content -->
+            <div class="section3__content">
+    
+                <!-- section3__message -->
+                <div class="section3__message">
+                    <div class="section3__message__inner">
+                        <p class="section3__content__text--ja">豊かな暮らしの体験宿 自然の中の貸切ロッジ。<br>海の音､鳥の声､樹々に囲まれて自然のなかでゆったりと､<br>屋久島の暮らしを体験できる宿です｡<br>定員は5名で、ベットは3台､布団を2枚敷くことができます｡</p>
+                        <p class="section3__content__text--en">English version About Lodge, stay plan.</p>
+                        <a class="section3__btn" href="">Read more</a>
+                    </div>
+                </div><!-- /section3__inner -->
+                
+                <!-- section3__image-->
+                <div class="section3__image">
+                    <div class="section3__image--l">
+                        <img class="section3__photo--l" src="./images/sec3_photo_1.png" alt="">
+                    </div>
+                    <div class="section3__image--grid">
+                        <img class="section3__photo--grid" src="./images/sec3_photo_2.png" alt="">
+                    </div>
+                </div><!-- /section3__image -->
+            </div><!-- /section3__content -->
+    </section><!-- /section3 -->
+
+    <!-- section4 -->
+    <section class="section4 wow fadeInUp" data-wow-duration="2s" data-wow-delay=".5s" data-wow-offset="10" id="program">
+        <h2 class="section4__vertical-title">Interactive</h2>
+        <div class="section4__title__unit">
+            <h3 class="section4__title">Interactive Program - 体験プログラム -</h3>
+            <span class="section4__title-line"></span>
+        </div>
+        
+        <!-- section4__content -->
+        <div class="section4__content">
+
+            <!-- section4__message -->
+            <div class="section4__message">
+                <div class="section4__message__inner">
+                    <p class="section4__content__text--ja">豊かな暮らしの体験宿 自然の中の貸切ロッジ。<br>海の音､鳥の声､樹々に囲まれて自然のなかでゆったりと､<br>屋久島の暮らしを体験できる宿です｡<br>定員は5名で、ベットは3台､布団を2枚敷くことができます｡</p>
+                    <p class="section4__content__text--en">English version About Lodge, stay plan.</p>
+                    <a class="section4__btn" href="">Read more</a>
+                </div>
+            </div><!-- /section4__inner -->
+            
+            <!-- section4__image-->
+            <div class="section4__image">
+                <div class="section4__image--l">
+                    <img class="section4__photo--l" src="./images/sec4_photo_1.png" alt="">
+                </div>
+                <div class="section4__image--grid">
+                    <img class="section4__photo--grid" src="./images/sec4_photo_2.png" alt="">
+                </div>
+            </div><!-- /section4__image -->
+        </div><!-- /section4__content -->
+    </section><!-- /section4 -->
+
+    <!-- section5 -->
+    <section class="section5 wow fadeInUp" data-wow-duration="2s" data-wow-delay=".5s" data-wow-offset="10">
+        <div class="section5__inner">
+            <p class="section5__text">豊かな暮らしの体験宿<br class="br__iphone">自然の中の貸切ロッジ。<br><br class="br__iphone">海の音､鳥の声､樹々に囲まれて<br class="br__iphone">自然のなかでゆったりと､ <br>屋久島の暮らしを体験できる宿です｡ <br><br>豊かな暮らしのひと時を、お過ごしください。<br><br>お待ちしております。</p>
+        </div><!-- /section5__inner -->
+    </section><!-- /section5 -->
+    
+    <!-- section6 -->
+    <section class="section6 wow fadeInUp" data-wow-duration="2s" data-wow-delay=".5s" data-wow-offset="10" id="booking">
+        <div class="section6__inner">
+            
+            <!-- section6__contact -->
+            <div class="section6__contact">
+                <h3 class="contact__title">Contact -お問い合わせ-</h3>
+                <p class="contact__text--ja">アクセスやお問い合わせはこちらのページから。<br>お気軽にご連絡ください。</p>
+                <p class="contact__text--en">Contact here.</p>
+                <a class="contact__btn" href="#">Contact</a>
+                <span class="contact__bg"></span>
+            </div><!-- /section6__contact-->
+
+            <!-- section6__booking -->
+            <div class="section6__booking">
+                <h3 class="booking__title">Booking -ご予約-</h3>
+                <p class="booking__text--ja">アクセスやお問い合わせはこちらのページから。<br>お気軽にご連絡ください。</p>
+                <p class="booking__text--en">Contact here.</p>
+                <a class="booking__btn" href="#">Booking</a>
+                <span class="booking__bg"></span>
+            </div>
+            <!-- /section6__booking -->
+
+            <!-- section6__contact--iphonex -->
+            <div class="section6__contact--iphonex">
+                <h3 class="contact__title">Contact</h3>
+                <p class="contact__lead">-お問い合わせ/ご予約-</p>
+                <p class="contact__text--ja">アクセスやお問い合わせはこちらのページから。<br>お気軽にご連絡ください。</p>
+                <p class="contact__text--en">Contact here.</p>
+                <a class="contact__btn" href="#">Contact -お問い合わせ-</a>
+                <a class="booking__btn" href="#">Booking -ご予約-</a>
+                <span class="contact__bg"></span>
+            </div><!-- /section6__contact--iphonex -->
+
+        </div><!-- /section6__inner -->
+    </section><!-- /section6 -->
+
+    <!-- footer -->
+    <footer class="footer">
+        <div class="footer__inner">
+
+            <!-- footer__logo -->
+            <div class="footer__logo">
+                <a href="#home"><img src="./images/footer-logo-white@2x.png" alt=""></a>
+            </div><!-- /footer__logo -->
+
+            <!-- footer__content -->
+            <div class="footer__content">
+                <h3 class="footer__content__title">いろは</h3>
+                <p class="footer__content__text">ここにも、<br>なにかメッセージが入ったり、<br>お問い合わせへのリンクがあったり、<br>ボタンを作ったりすることもできます。</p>
+            </div><!-- footer__content -->
+
+            <!-- footer__contact -->
+            <div class="footer__contact">
+                <h3 class="footer__contact__title">Contact</h3>
+                <p class="footer__address">〒891-4407<br>鹿児島県熊毛郡屋久島町湯泊211-53<br>TEL: 080-3187-8533<br><span class="footer__address--pc">e-mail:</span>iroha.yakushima108@gmail.com</p>
+                <div class="footer__logo__facebook">
+                    <img src="./images/logo_facebook.png" alt="">
+                </div>
+                <div class="footer__logo__insta">
+                    <img src="./images/logo_insta.png" alt="">
+                </div>
+            </div><!-- /footer__contact -->
+        </div>
+
+        <!-- footer__bottom -->
+        <div class="footer__bottom">
+            <p class="copyright">Copyright©︎暮らしの体験宿 いろは</p>
+            <p class="copyright--iphonex">Copyright ©︎ 2019  Lodge&Food Atelier  iroha.<br>All Rights Reserved.</p>
+        </div><!-- /footer__bottom -->
+
+    </footer><!-- /footer -->
+
+    <!-- wow.js 読み込み -->
+    <script src="./js/wow.min.js"></script>
+
+    <!-- swaiper.js 読み込み -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
+
+    <!-- script.js 読み込み -->
+    <script type="text/javascript" src="./js/script.js"></script>
+</body>
+</html>

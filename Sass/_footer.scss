@@ -1,0 +1,357 @@
+/*---------------------------------
+
+  footer
+
+  1. footer
+    1.1 footer__inner
+        1.1.1 footer__logo
+        1.1.2 footer__content
+        1.1.3 footer__contact
+    1.2 footer__bottom
+
+---------------------------------*/
+
+/*  
+1.1 footer__inner
+---------------------------------*/
+.footer__inner {
+    display: grid;
+    height: 17.31vw;
+    background-color: rgba(0, 0, 0, .95);
+    grid-template-columns: 24.73vw 26.09vw 1fr;
+}
+
+/*  
+  1.1.1 footer__logo
+---------------------------------*/
+.footer__logo {
+    width: 21.77vw;
+    height: 22.94vw;
+    margin: -3.43vw 0 0 2.96vw;
+    & img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+/*  
+  1.1.2 footer__content
+---------------------------------*/
+.footer__content {
+    width: 26.1vw;
+    margin: 2.53vw 0 0 2.13vw;
+}
+
+.footer__content__title {
+    position: relative;
+    color: #fff;
+    font-size: 1.56vw;
+    line-height: 1.56vw;
+    letter-spacing: 0.1em;
+    &::before {
+        position: absolute;
+        bottom: -.43vw;
+        left: .25vw;
+        width: 3.8vw;
+        height: .15rem;
+        background-color: #fff;
+        content: "";
+    }
+}
+
+.footer__content__text {
+    margin: 1.21vw 0 0 0.62vw;
+    color: #fff;
+    font-size: 1.19vw;
+    line-height: 1.78vw;
+    letter-spacing: 0.1em;
+}
+
+/*  
+  1.1.3 footer__contact
+---------------------------------*/
+.footer__contact {
+    margin: 2.53vw 0 0 15.98vw;
+}
+
+.footer__contact__title {
+    position: relative;
+    color: #fff;
+    font-size: 1.56vw;
+    line-height: 1.56vw;
+    letter-spacing: 0.1em;
+    &::before {
+        position: absolute;
+        bottom: -.43vw;
+        left: .78rem;
+        width: 5.57vw;
+        height: .15rem;
+        background-color: #fff;
+        content: "";
+    }
+}
+
+.footer__address {
+    margin: 1.21vw 0 0 2.13vw;
+    color: #fff;
+    font-size: 1.19vw;
+    line-height: 1.56vw;
+    letter-spacing: 0.1em;
+}
+
+.footer__logo__facebook {
+    display: inline-block;
+    width: 3.33vw;
+    height: 3.17vw;
+    margin-top: 1.22vw;
+    cursor: pointer;
+    transition: .4s;
+    &:hover {
+        opacity: .5;
+    }
+    & img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.footer__logo__insta {
+    display: inline-block;
+    width: 3.33vw;
+    height: 3.17vw;
+    margin: 1.22vw 0 0 0.26vw;
+    cursor: pointer;
+    transition: .4s;
+    &:hover {
+        opacity: .5;
+    }
+    & img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+/*  
+  1.2 footer__bottom
+---------------------------------*/
+.footer__bottom {
+    height: 3.59vw;
+    background-color: rgba(0, 0, 0, .8);
+}
+
+.copyright {
+    display: inline-block;
+    margin: 1.4vw 0 0 2.6vw;
+    color: #fff;
+    font-size: 0.78vw;
+    line-height: 1.5vw;
+    letter-spacing: 0.1em;
+}
+
+.copyright--iphonex {
+    display: none;
+}
+
+/*---------------------------------
+
+  section6 768px 幅
+
+---------------------------------*/
+@include mq('tab') {
+    /*  
+        1.1 footer__inner
+    ---------------------------------*/
+    .footer__inner {
+        overflow: hidden;
+    }
+
+    /*  
+        1.1.2 footer__content
+    ---------------------------------*/
+    .footer__content__text {
+        transform: scale(0.9);
+        transform-origin: left top;
+        font-size: 1rem;
+    }
+
+    /*  
+        1.1.3 footer__contact
+    ---------------------------------*/
+    .footer__address {
+        transform: scale(0.9);
+        transform-origin: left top;
+        font-size: 1rem;
+    }
+
+    /*  
+        1.2 footer__bottom
+    ---------------------------------*/
+    .copyright {
+        transform: scale(0.5);
+        transform-origin: left top;
+        font-size: 1rem;
+    }
+}
+
+/*---------------------------------
+
+  section6 414px 幅
+
+---------------------------------*/
+@include mq('sp') {
+
+    /*  
+        1.1.2 footer__content
+    ---------------------------------*/
+    .footer__content {
+        width: 47.9vw;
+    }
+
+    .footer__content__title {
+        transform: scale(0.7);
+        transform-origin: left top;
+        font-size: 1rem;
+        &::before {
+            width: 7.8vw;
+            bottom: -1.43vw;
+            left: .25vw;
+        }
+    }
+    .footer__content__text {
+        transform: scale(0.7);
+        line-height: 1.1;
+    }
+    /*  
+        1.1.3 footer__contact
+    ---------------------------------*/
+    .footer__contact {
+        width: 57.2vw;;
+        margin-left: 11.98vw;
+    }
+    .footer__contact__title {
+        transform: scale(0.6);
+        transform-origin: left top;
+        font-size: 1rem;
+    }
+    .footer__address {
+        transform: scale(0.6);
+        height: 4.5vw;    
+        margin-left: 0;
+        line-height: 1.1;
+    }
+    .footer__logo__facebook {
+        margin-left: 3.14vw;
+    }
+    /*  
+        1.2 footer__bottom
+    ---------------------------------*/
+    .footer__bottom {
+        position: relative;
+    }
+    .copyright {
+        position: absolute;
+        top: 0.48vw;
+        left: 0;
+        transform: scale(0.1);
+        transform-origin: left top;
+        font-size: 1rem;
+    }
+}
+
+/*---------------------------------
+
+  header iphoneX 幅
+
+---------------------------------*/
+@include mq('iphonex') {
+    /*  
+        1.1 footer__inner
+    ---------------------------------*/
+    .footer__inner {
+        display: block;
+        height: 104.41vw;
+    }
+
+    /*  
+        1.1.1 footer__logo
+    ---------------------------------*/
+    .footer__logo {
+        width: 69.06vw;
+        height: 53.74vw;
+        margin: 0 auto;
+    }
+
+    /*  
+        1.1.2 footer__content
+    ---------------------------------*/
+    .footer__content {
+        display: none;
+    }
+    
+    .footer__contact {
+        position: relative;
+        width: 62.33vw;
+        margin: 22.34vw auto 0;
+    }
+
+    .footer__contact__title {
+        display: none;
+    }
+
+    .footer__address {
+        transform: scale(1);
+        font-weight: 500;
+        font-size: 3.46vw;
+        line-height: 5.6vw;
+        font-family: YuMincho;
+        text-align: center;
+    }
+    
+    .footer__address--pc {
+        display: none;
+    }
+
+    .footer__logo__facebook {
+        display: inline-block;
+        position: absolute;
+        top: -24.64vw;
+        left: 8.26vw;
+        width: 10.93vw;
+        height: 10.13vw;
+        margin: 0;
+    }
+    
+    .footer__logo__insta {
+        display: inline-block;
+        position: absolute;
+        top: -24.64vw;
+        right: 8.26vw;
+        width: 10.93vw;
+        height: 10.13vw;
+        margin: 0;
+    }
+
+    /*  
+        1.2 footer__bottom
+    ---------------------------------*/
+    .footer__bottom {
+        position: static;
+        height: 9.86vw;
+        text-align: center;
+    }
+
+    .copyright {
+        display: none;
+    }
+    
+    .copyright--iphonex {
+        display: inline-block;
+        transform: scale(1);
+        margin-top: 1.6vw;
+        color: #fff;
+        font-size: 2.66vw;
+        line-height: 3.46vw;
+        letter-spacing: 0.1em;
+        text-align: center;
+    }
+}

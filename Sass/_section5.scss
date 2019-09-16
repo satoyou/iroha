@@ -1,0 +1,95 @@
+/*---------------------------------
+
+  section5
+
+  1. secton5
+    1.1 section5__inner
+        1.1.1 section5__text
+
+---------------------------------*/
+
+/*  
+  1.1 section5__inner
+---------------------------------*/
+.section5__inner {
+  margin-top: 11.76vw;
+}
+
+.section5__text {
+  color: rgba(0, 0, 0, 0.8);
+  font-weight: normal;
+  font-size: 1.56vw;
+  line-height: 3.64vw;
+  font-family: "Toppan Bunkyu Mincho";
+  letter-spacing: 0.1em;
+  text-align: center;
+  text-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+}
+
+/*  
+  1.1.1 section5__text
+---------------------------------*/
+.br__iphone {
+  display: none;
+}
+
+/*---------------------------------
+
+  section5 768px 幅
+
+---------------------------------*/
+@include mq('tab') {
+  /*  
+    1.1.1 section5__text
+  ---------------------------------*/
+  .section5__text {
+    font-size: 1.56vw;
+  }
+}
+
+/*---------------------------------
+
+  section1 414px 幅
+
+---------------------------------*/
+@include mq('sp') {
+  .section5 {
+    display: none;
+  }
+}
+
+/*---------------------------------
+
+  header iphoneX 幅
+
+---------------------------------*/
+@include mq('iphonex') {
+  /*  
+    1 section5
+  ---------------------------------*/
+  .section5 {
+    display: block;
+  }
+
+  /*  
+    1.1 section5__inner
+  ---------------------------------*/
+  .section5__inner {
+    margin-top: 28.64vw;
+  }
+
+  /*  
+    1.1.1 section5__text
+  ---------------------------------*/
+  .section5__text {
+    width: 90.93vw;
+    height: 108.8vw;
+    margin: 0 auto;
+    font-size: 4vw;
+    line-height: 8vw;
+  }
+
+  .br__iphone {
+    display: inline-block;
+  }
+}

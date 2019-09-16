@@ -1,0 +1,25 @@
+/*---------------------------------
+
+  base
+
+---------------------------------*/
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6em;
+    font-family: $font-base;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+.header {
+  position: relative;
+}
