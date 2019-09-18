@@ -51,7 +51,7 @@ li {
     1.2 header__menu
 ---------------------------------*/
 .header__menu {
-  display: flex;
+  display: flex !important;
   position: fixed;
   top: 0;
   z-index: 3;
@@ -187,8 +187,10 @@ li {
     ---------------------------------*/
   .drawer-hamburger {
     display: block;
+    top: -0.65vw;
     z-index: 100;
-    padding: 1.88vw 3.45vw 0 0;
+    padding: 0 3.45vw 0 0;
+    height: 7.13vw;
   }
   .drawer-hamburger-icon {
     width: 4.03vw;
@@ -304,7 +306,8 @@ li {
         1.1.1 drawer-hamburger
     ---------------------------------*/
   .drawer-hamburger {
-    padding: 0.88vw 3.45vw 0 0;
+    padding: 0 3.45vw 0 0;
+    top: -1.2vw;
   }
   .drawer-hamburger-icon {
     width: 4.03vw;
@@ -355,7 +358,8 @@ li {
     1.1.1 drawer-hamburger
     ---------------------------------*/
   .drawer-hamburger {
-    padding: 5.81vw 6.74vw 0 0;
+    padding: 0 6.74vw 0 0;
+    height: 16.61vw;
   }
   .drawer-hamburger-icon {
     width: 6.12vw;
