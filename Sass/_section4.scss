@@ -28,9 +28,12 @@
     position: absolute;
     top: 22.16vw;
     left: -5.48vw;
-    transform: rotate(-90deg);
     -moz-transform: rotate(-90deg);
     -webkit-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+    -ms-color: #000;
     color: rgba(0, 0, 0, 0.8);
     font-weight: normal;
     font-size: 5.2vw;
@@ -47,6 +50,7 @@
 }
 
 .section4__title {
+    -ms-color: #000;
     color: rgba(0, 0, 0, 0.8);
     font-weight: normal;
     font-size: 3.12vw;
@@ -102,6 +106,7 @@
 
 .section4__content__text--en {
     margin-top: 3.46vw;
+    -ms-color: #000;
     color: rgba(0, 0, 0, 0.8);
     font-size: 0.78vw;
     letter-spacing: 0.1em;
@@ -115,14 +120,19 @@
     margin-top: 5.39vw;
     padding: 1.02vw 1.61vw 0.75vw;
     border: 1px solid #333;
+    -ms-color: #000;
     color: rgba(0, 0, 0, 0.9);
     font-size: 0.78vw;
     letter-spacing: 0.1em;
     text-align: center;
     text-shadow: 0px 4px 7px rgba(0, 0, 0, 0.16);
     &:hover {
+        filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#E6000000,endColorstr=#E6000000); 
         background: rgba(0, 0, 0, 0.9);
         color: #fff;
+        &:not(:target) {
+            filter: none;
+        }
     }
 }
 

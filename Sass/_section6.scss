@@ -37,6 +37,7 @@
 }
 
 .contact__title {
+    -ms-color: #000;
     color: rgba(0, 0, 0, 0.8);
     font-weight: normal;
     font-size: 2.08vw;
@@ -48,6 +49,7 @@
 
 .contact__text--ja {
     margin: 2.03vw 0 0 5.52vw;
+    -ms-color: #000;
     color: rgba(0, 0, 0, 0.8);
     font-size: 0.9vw;
     line-height: 1.56vw;
@@ -58,6 +60,7 @@
 
 .contact__text--en {
     margin: 2.32vw 0 0 5.52vw;
+    -ms-color: #000;
     color: rgba(0, 0, 0, 0.8);
     font-size: 0.78vw;
     letter-spacing: 0.1em;
@@ -70,6 +73,7 @@
     margin-top: 3.03vw;
     padding: 1.61vw 3.54vw 1.37vw;
     border: 1px solid #000;
+    -ms-color: #000;
     color: rgba(0, 0, 0, 0.9);
     font-size: 1.04vw;
     line-height: 1.4vw;
@@ -77,8 +81,12 @@
     text-shadow: 0px 4px 7px rgba(0, 0, 0, 0.16);
     transition: .4s;
     &:hover {
+        filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#E6000000,endColorstr=#E6000000); 
         background: rgba(0, 0, 0, 0.9);
         color: #fff;
+        &:not(:target) {
+            filter: none;
+        }
     }
 }
 
@@ -104,6 +112,7 @@
 }
 
 .booking__title {
+    -ms-color: #000;
     color: rgba(0, 0, 0, 0.8);
     font-weight: normal;
     font-size: 2.08vw;
@@ -115,6 +124,7 @@
 
 .booking__text--ja {
     margin: 2.03vw 0 0 5.52vw;
+    -ms-color: #000;
     color: rgba(0, 0, 0, 0.8);
     font-size: 0.9vw;
     line-height: 1.56vw;
@@ -125,6 +135,7 @@
 
 .booking__text--en {
     margin: 2.32vw 0 0 5.52vw;
+    -ms-color: #000;
     color: rgba(0, 0, 0, 0.8);
     font-size: 0.78vw;
     letter-spacing: 0.1em;
@@ -137,6 +148,7 @@
     margin-top: 3.03vw;
     padding: 1.61vw 3.54vw 1.37vw;
     border: 1px solid #000;
+    -ms-color: #000;
     color: rgba(0, 0, 0, 0.9);
     font-size: 1.04vw;
     line-height: 1.4vw;
@@ -144,8 +156,12 @@
     text-shadow: 0px 4px 7px rgba(0, 0, 0, 0.16);
     transition: .4s;
     &:hover {
+        filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#E6000000,endColorstr=#E6000000); 
         background: rgba(0, 0, 0, 0.9);
         color: #fff;
+        &:not(:target) {
+            filter: none;
+        }
     }
 }
 
@@ -405,6 +421,7 @@
     }
     
     .contact__title {
+        -ms-color: #000;
         color: rgba(0, 0, 0, 0.8);
         font-weight: normal;
         font-size: 6.66vw;
@@ -416,6 +433,7 @@
 
     .contact__lead {
         margin-top: 4.53vw;
+        -ms-color: #000;
         color: rgba(0, 0, 0, 0.8);
         font-size: 4vw;
         letter-spacing: 0.1em;
@@ -449,8 +467,12 @@
         text-align: center;
         transition: .4s;
         &:hover {
+            filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#E6000000,endColorstr=#E6000000); 
             background: rgba(0, 0, 0, 0.9);
             color: #fff;
+            &:not(:target) {
+                filter: none;
+            }
         }
     }
     

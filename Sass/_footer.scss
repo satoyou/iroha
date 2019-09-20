@@ -17,8 +17,12 @@
 .footer__inner {
     display: grid;
     height: 17.31vw;
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#E6000000,endColorstr=#E6000000); 
     background-color: rgba(0, 0, 0, .95);
     grid-template-columns: 24.73vw 26.09vw 1fr;
+    &:not(:target) {
+        filter: none;
+    }
 }
 
 /*  
@@ -136,7 +140,11 @@
 ---------------------------------*/
 .footer__bottom {
     height: 3.59vw;
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#E6000000,endColorstr=#E6000000); 
     background-color: rgba(0, 0, 0, .8);
+    &:not(:target) {
+        filter: none;
+    }
 }
 
 .copyright {

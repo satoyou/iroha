@@ -31,8 +31,13 @@
     z-index: 3;
     width: 100%;
     height: 7.13vw;
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#B3000000,endColorstr=#B3000000); 
     background-color: rgba(0, 0, 0, .7);
     justify-content: space-between;
+}
+
+.header__menu:not(:target){
+    filter: none;
 }
 
 /*  
@@ -188,8 +193,13 @@
         z-index: 4;
         width: 100%;
         height: 56.2vw;
+        filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#B3000000,endColorstr=#B3000000); 
         background-color: rgba(0, 0, 0, .7);
         text-align: center;
+    }
+
+    .drawer-nav:not(:target){
+        filter: none;
     }
     
     .drawer--right.drawer-open .drawer-hamburger {

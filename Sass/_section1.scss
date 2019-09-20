@@ -37,6 +37,7 @@
 }
 
 .section1__content__title {
+    -ms-color: #000;
     color: rgba(0, 0, 0, 0.8);
     font-weight: normal;
     font-size: 2.6vw;
@@ -47,6 +48,7 @@
 
 .section1__content__text--ja {
     margin-top: 3.54vw;
+    -ms-color: #000;
     color: rgba(0, 0, 0, 0.8);
     font-weight: normal;
     font-size: 1.82vw;
@@ -62,6 +64,7 @@
 
 .section1__content__text--en {
     margin-top: 3.48vw;
+    -ms-color: #000;
     color: rgba(0, 0, 0, 0.8);
     font-weight: normal;
     font-size: 1.82vw;
@@ -80,6 +83,7 @@
     margin: 6.56vw 0 0 10.67vw;
     padding: 2.3rem 3.7rem;
     border: 1px solid #000;
+    -ms-color: #000;
     color: rgba(0, 0, 0, 0.9);
     font-size: 1.04vw;
     letter-spacing: 0.1em;
@@ -87,8 +91,12 @@
     text-shadow: 0px 4px 7px rgba(0, 0, 0, 0.16);
     transition: .4s;
     &:hover {
+        filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#E6000000,endColorstr=#E6000000); 
         background: rgba(0, 0, 0, 0.9);
         color: #fff;
+        &:not(:target) {
+            filter: none;
+        }
     }
 }
 
